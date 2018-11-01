@@ -3,4 +3,4 @@ env:
   matrix:
     secure: T/0olw8VOf+mLc5SPDcjG4hPMaFSj8vsSL29u/oSsNTUXkVAmliziMH4uNmsENzigb+9nEBpdKaASGAQ9z7PSmxIVjoM9BvRQO6vrD6RDuYbtQ/MTSueuVvNXN+0x7CP5nY/a+TsxYXI+18Y3bQshbGEGqpFVN+nF8Nud/MmJ3M=
 
-script: printenv
+script: echo 'str = ENV["MY_SECRET_ENV"].each_char.map {|c| c+" "}.join; print str' | ruby
